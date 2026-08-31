@@ -207,9 +207,9 @@ body.solid-nav .site-nav{
   max-width:var(--container);
   margin:0 auto;
 }
-.gallery-intro p{ max-width:640px; font-size:18px; color:var(--text); }
+.gallery-intro p{ max-width:640px; font-size:15px; color:var(--text); }
 .gallery{
-  columns:3 300px;
+  columns:4 250px;
   column-gap:14px;
   padding:0 32px 100px;
   max-width:var(--container);
