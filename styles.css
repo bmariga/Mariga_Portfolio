@@ -288,33 +288,6 @@ section{ padding:96px 32px; }
   .bio-grid{ grid-template-columns:1fr; }
 }
 
-/* cards (portfolio / services) */
-.card-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:1px;
-  background:var(--line);
-  border:1px solid var(--line);
-}
-.card{
-  background:var(--bg);
-  padding:0;
-  display:flex;
-  flex-direction:column;
-}
-.card .thumb{ aspect-ratio:4/3; overflow:hidden; }
-.card .thumb img{ width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
-.card:hover .thumb img{ transform:scale(1.04); }
-.card-body{ padding:26px; flex:1; display:flex; flex-direction:column; }
-.card-tag{
-  font-family:var(--mono); font-size:10.5px; letter-spacing:0.08em;
-  text-transform:uppercase; color:var(--brass); margin-bottom:10px;
-}
-.card h3{ font-size:19px; margin-bottom:8px; }
-.card p{ font-size:14.5px; margin-bottom:0; }
-@media (max-width:900px){ .card-grid{ grid-template-columns:1fr 1fr; } }
-@media (max-width:600px){ .card-grid{ grid-template-columns:1fr; } }
-
 /* services list */
 .service-card{
   border:1px solid var(--line);
