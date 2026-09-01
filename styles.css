@@ -53,7 +53,7 @@ p{ margin:0 0 1em; color:var(--text-mute); }
 
 /* ---------- eyebrow / mono kicker (signature element) ---------- */
 .kicker{
-  font-family:var(--mono);
+  font-family:var(--sans);
   font-size:12px;
   letter-spacing:0.14em;
   text-transform:uppercase;
@@ -243,7 +243,7 @@ body.solid-nav .site-nav{
 
 /* ---------- sections generic ---------- */
 section{ padding:96px 32px; }
-.section-inner{ max-width:var(--container); margin:0 auto; }
+.section-inner{ max-width:var(--container); margin:60px auto; }
 .section-head{ max-width:640px; margin-bottom:56px; }
 .section-head h2{ font-size:clamp(28px,4vw,42px); }
 
@@ -278,7 +278,7 @@ section{ padding:96px 32px; }
   border-right:1px solid var(--line);
 }
 .dual .track:last-child{ border-right:none; }
-.dual .track h3{ font-size:24px; margin-bottom:6px; }
+.dual .track h3{ font-size:18px; margin-bottom:6px; }
 .dual .track .kicker{ margin-bottom:22px; }
 .chip-row{ display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
 .chip{
