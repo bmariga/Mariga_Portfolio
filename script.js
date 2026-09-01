@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", onScroll, { passive: true });
 });
 
- // ---------- gallery lightbox ----------
+// ---------- gallery lightbox ----------
 document.addEventListener("DOMContentLoaded", () => {
   const galleryImgs = Array.from(document.querySelectorAll(".gallery figure img"));
   if (!galleryImgs.length) return;
@@ -78,5 +78,27 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Escape") close();
     if (e.key === "ArrowLeft") show(current - 1);
     if (e.key === "ArrowRight") show(current + 1);
+  });
+});
+
+// ---------- disable right-click on images + show copyright notice ----------
+document.addEventListener("DOMContentLoaded", () => {
+  const notice = document.createElement("div");
+  notice.className = "copyright-notice";
+  notice.textContent = "This image is copyrighted © 2026 Mariga Bruce. Get in touch via the contact page.";
+  document.body.appendChild(notice);
+
+  document.addEventListener("contextmenu", (e) => {
+    if (e.target.tagName !== "IMG") return;
+    e.preventDefault();
+
+    notice.style.left = e.pageX + "px";
+    notice.style.top = e.pageY + "px";
+    notice.classList.add("show");
+
+    clearTimeout(notice._hideTimer);
+    notice._hideTimer = setTimeout(() => {
+      notice.classList.remove("show");
+    }, 2200);
   });
 });

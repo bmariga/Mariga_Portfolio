@@ -247,6 +247,25 @@ section{ padding:96px 32px; }
 .section-head{ max-width:640px; margin-bottom:56px; }
 .section-head h2{ font-size:clamp(28px,4vw,42px); }
 
+.copyright-notice{
+  position:absolute;
+  z-index:300;
+  transform:translate(-50%, -120%);
+  background:rgba(228, 230, 233, 0.95);
+  border:1px solid var(--line);
+  color:var(--bg);
+  font-family:var(--mono);
+  font-size:10px;
+  letter-spacing:0.02em;
+  padding:7px;
+  max-width:240px;
+  text-align:center;
+  pointer-events:none;
+  opacity:0;
+  transition:opacity .2s ease;
+}
+.copyright-notice.show{ opacity:1; }
+
 /* dual-track split */
 .dual{
   display:grid;
