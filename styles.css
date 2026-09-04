@@ -351,6 +351,18 @@ section{ padding:96px 32px; }
   line-height:1.6;
 }
 
+.contact-form-wrap{
+  max-width:600px;
+  margin:0 auto;
+}
+.contact-form-wrap .kicker{
+  justify-content:center;
+}
+.contact-form-wrap .btn{
+  display:flex;
+  margin:0 auto;
+}
+
 .contact-list{ list-style:none; padding:0; margin:28px 0 0; }
 .contact-list li{ padding:16px 0; border-top:1px solid var(--line); }
 .contact-list a{ font-size:17px; }
