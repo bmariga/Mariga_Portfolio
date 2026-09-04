@@ -242,7 +242,7 @@ body.solid-nav .site-nav{
 .gallery figure:hover figcaption{ opacity:1; }
 
 /* ---------- sections generic ---------- */
-section{ padding:96px 32px; }
+section{ padding:96px 32px 48px; }
 .section-inner{ max-width:var(--container); margin:60px auto; }
 .section-head{ max-width:640px; margin-bottom:56px; }
 .section-head h2{ font-size:clamp(28px,4vw,42px); }
@@ -362,7 +362,9 @@ section{ padding:96px 32px; }
   display:flex;
   margin:0 auto;
 }
-
+.contact-form-wrap .field label{
+  color:var(--brass);
+}
 .contact-list{ list-style:none; padding:0; margin:28px 0 0; }
 .contact-list li{ padding:16px 0; border-top:1px solid var(--line); }
 .contact-list a{ font-size:17px; }
@@ -434,14 +436,16 @@ section{ padding:96px 32px; }
 /* footer */
 .site-footer{
   border-top:1px solid var(--line);
-  padding:40px 32px;
+  padding:28px;
 }
 .site-footer .wrap{
   display:flex;
-  justify-content:space-between;
+  flex-direction:column;
   align-items:center;
-  flex-wrap:wrap;
-  gap:16px;
+  gap:12px;
+}
+.socials{
+  justify-content:center;
 }
 .site-footer p{ margin:0; font-size:12.5px; font-family:var(--mono); color:var(--text-mute); }
 .socials{ display:flex; gap:20px; list-style:none; margin:0; padding:0; }
