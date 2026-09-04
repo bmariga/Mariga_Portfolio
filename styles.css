@@ -183,7 +183,7 @@ body.solid-nav .site-nav{
 }
 .hero .role-line{
   font-family:var(--mono);
-  font-size:14px;
+  font-size:15px;
   letter-spacing:0.1em;
   text-transform:uppercase;
   color:var(--text-mute);
@@ -333,6 +333,24 @@ section{ padding:96px 32px; }
   grid-template-columns:1fr 1fr;
   gap:64px;
 }
+
+.contact-heading{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 56px;
+}
+.contact-heading .kicker{
+  justify-content:center;
+  margin-bottom:16px;
+}
+.contact-heading h2{
+  font-family:var(--sans);
+  font-size:14px;
+  font-weight:400;
+  color:#fff;
+  line-height:1.6;
+}
+
 .contact-list{ list-style:none; padding:0; margin:28px 0 0; }
 .contact-list li{ padding:16px 0; border-top:1px solid var(--line); }
 .contact-list a{ font-size:17px; }
@@ -356,7 +374,7 @@ section{ padding:96px 32px; }
 .contact-photo:hover img{ transform:scale(1.03); }
 .contact-photo figcaption{
   position:absolute; left:0; right:0; bottom:0;
-  padding:14px 16px;
+  padding:10px 10px;
   background:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
   font-family:var(--mono);
   font-size:11px;
