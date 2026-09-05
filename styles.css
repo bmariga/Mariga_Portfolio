@@ -65,8 +65,6 @@ p{ margin:0 0 1em; color:var(--text-mute); }
 }
 .kicker::before{
   content:"";
-  width:22px;
-  height:1px;
   background:var(--brass);
   display:inline-block;
 }
@@ -207,7 +205,7 @@ body.solid-nav .site-nav{
   max-width:var(--container);
   margin:0 auto;
 }
-.gallery-intro p{ max-width:640px; font-size:15px; color:var(--text); }
+.gallery-intro p{ max-width:640px; font-size:15px; color:var(--brass);; }
 .gallery{
   columns:4 250px;
   column-gap:14px;
